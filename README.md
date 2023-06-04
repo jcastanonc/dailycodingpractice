@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @jcastanonc
 - 👀 I’m interested in HTML, JavaScript, React, CSS, and Python.
-- 🌱 I’m currently learning JavaScript
+- 🌱 I’m currently learning JavaScript and Python
 - 💞️ I’m looking to collaborate on web development projects.
 - 📫 
 
