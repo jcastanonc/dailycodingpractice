@@ -1,12 +1,12 @@
-/* Character recognition software is widely used to digitise printed texts. Thus the texts can be edited, searched and stored on a computer.
-When documents (especially pretty old ones written with a typewriter), are digitised character recognition softwares often make mistakes.
-Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
-S is misinterpreted as 5
-O is misinterpreted as 0
-I is misinterpreted as 1
-The test cases contain numbers only by mistake.
-*/
-function correct(string) 
-{
- return string.replace(/5/g,"S").replace(/0/g,"O").replace(/1/g,"I");
+/*Given a string of words, you need to find the highest scoring word.
+Each letter of a word scores points according to its position in the alphabet: a = 1, b = 2, c = 3 etc.
+For example, the score of abad is 8 (1 + 2 + 1 + 4).
+You need to return the highest scoring word as a string.
+If two words score the same, return the word that appears earliest in the original string.
+All letters will be lowercase and all inputs will be valid.
+ */
+function high(s){
+let as = s.split(' ').map(s => [...s].reduce((a, b) => a+b.charCodeAt(0) - 96, 0)
+);
+return s.split(' ')[as.indexOf(Math.max(...as))];
 }
